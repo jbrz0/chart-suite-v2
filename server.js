@@ -32,10 +32,6 @@ app.get('/pie', (req, res) => {
   res.sendFile(path.join(__dirname, '/build/pie.html'));
 });
 
-app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, '/build/about.html'));
-});
-
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, '/build/404.html'));
 });

@@ -7,6 +7,8 @@ import IconBar from './components/IconBar.jsx';
 import Video from './components/Video.jsx';
 import Features from './components/Features.jsx';
 import Screenshots from './components/Screenshots.jsx';
+import Footer from './components/Footer.jsx';
+import ActionBtn from './components/ActionBtn.jsx';
 
 import BarChartTemplate from './components/BarChartTemplate.jsx';
 import LineChartTemplate from './components/LineChartTemplate.jsx';
@@ -40,6 +42,12 @@ if (document.body.contains(document.getElementById('features'))) {
 }
 if (document.body.contains(document.getElementById('screenshots'))) {
   render(<Screenshots />, document.getElementById('screenshots'));
+}
+if (document.body.contains(document.getElementById('footer'))) {
+  render(<Footer />, document.getElementById('footer'));
+}
+if (document.body.contains(document.getElementById('action-btn'))) {
+  render(<ActionBtn />, document.getElementById('action-btn'));
 }
 
 // Charts

@@ -18,13 +18,6 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   inject: true,
   allChunks: true,
 });
-const HTMLWebpackPluginConfigAbout = new HTMLWebpackPlugin({
-  title: 'AboutPage',
-  template: path.join(__dirname, '/app/about.html'),
-  filename: 'about.html',
-  inject: true,
-  allChunks: true,
-});
 const HTMLWebpackPluginConfigBar = new HTMLWebpackPlugin({
   title: 'ChartBar',
   template: path.join(__dirname, '/app/bar.html'),
@@ -118,7 +111,6 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     HTMLWebpackPluginConfig,
-    HTMLWebpackPluginConfigAbout,
     HTMLWebpackPluginConfigBar,
     HTMLWebpackPluginConfigLine,
     HTMLWebpackPluginConfigNotFound,
