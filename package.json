@@ -1,6 +1,6 @@
 {
   "name": "chart-suite-v2",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Create and build charts interactively",
   "main": "index.js",
   "scripts": {
