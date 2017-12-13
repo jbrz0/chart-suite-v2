@@ -1,0 +1,6 @@
+# Exclude directories
+/node_modules/
+/build/
+
+# Exclude files
+sitemap.xml
