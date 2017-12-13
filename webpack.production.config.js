@@ -32,6 +32,13 @@ const HTMLWebpackPluginConfigLine = new HTMLWebpackPlugin({
   inject: true,
   allChunks: true,
 });
+const HTMLWebpackPluginConfigPie = new HTMLWebpackPlugin({
+  title: 'ChartPie',
+  template: path.join(__dirname, '/app/pie.html'),
+  filename: 'pie.html',
+  inject: true,
+  allChunks: true,
+});
 const HTMLWebpackPluginConfigNotFound = new HTMLWebpackPlugin({
   title: 'NotFoundPage',
   template: path.join(__dirname, '/app/404.html'),
@@ -113,6 +120,7 @@ module.exports = {
     HTMLWebpackPluginConfig,
     HTMLWebpackPluginConfigBar,
     HTMLWebpackPluginConfigLine,
+    HTMLWebpackPluginConfigPie,
     HTMLWebpackPluginConfigNotFound,
     new PreloadWebpackPlugin(),
     SassBundle,
